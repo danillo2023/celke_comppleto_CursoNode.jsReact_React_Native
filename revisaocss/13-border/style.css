@@ -1,0 +1,45 @@
+body{
+    background-color: #e8e8e8;
+    color: #2d49a6;
+}
+.pontilhada{
+    border: dotted;
+}
+.Tracejada{
+    border-style: dashed;
+}
+.dupla{
+    border-style: double;
+}
+.solida{
+    border-style: solid;
+}
+.ranhura{
+   border-style: groove; 
+}
+.cume{
+    border-style: ridge;
+}
+.inset{
+    border-style: inset;
+}
+.outset{
+    border-style: outset;
+}
+.largura_borda{
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ff7000;
+}
+.cor_borda_dif{
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ff0000 #ffff00 #00ffff #4b0082;
+}
+.cor_borda_dif_per{
+    background-color: #ffd700;
+    border-top: 15px dotted #008000;
+    border-style: solid;
+    border-color: #ff0000 #ffff00 #00ffff #4b0082;
+    border-left: 6px solid #ff0000;
+}

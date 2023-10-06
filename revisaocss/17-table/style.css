@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e8e8e8;
+    color: #2d49a6;
+}
+table, th , td{
+    border: 1px solid #222222;
+    border-collapse: collapse;
+}
+table{
+    width: 30%;
+}
+.conteudo{
+    text-align: center;
+}
+.acoes{
+    text-align: center;
+}
+th{
+    background-color: #264696;
+    color: #fff;
+    font-size: 20px;
+}

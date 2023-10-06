@@ -1,0 +1,14 @@
+body{
+    background-color: #e8e8e8;
+    color: #2d49a6;
+}
+/*link nao visitado */
+a:link{
+    color: #334d5c;
+    text-decoration: none;
+
+}
+/*link  visitado */
+a:visited{
+    color: rgb(246, 147, 107);
+}
