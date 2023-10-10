@@ -1,16 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="img/favicon.ico" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style_adm.css">
-        
-        <title>listar</title>
-    </head>
-<body>
-    <h1>Listar</h1>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style_adm.css">
     
-</body>
+    <title>Listar - Celke</title>
+</head>
+
+<body>
+    <!--Inicio NavBar-->
+     <nav class="navbar"> 
+        <div class="navbar-content">
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="img/logo_celke-cursos_BWVoIL.png" alt="celke" class="logo" >
+        </div>
+
+        <div class="navbar-content">
+            <div class="notification">
+                <i class="fa-regular fa-bell"></i>
+                <span class="number">7</span>
+                <div class="dropdown-menu">
+                   <div class="dropdown-content">
+                      <li>
+                            <img src="img/avatar.png" alt="Usuario">
+                            <div class="text">Acredite em si e chegará um dia em que os outros não terão outra escolha senão acreditar com você</div>
+                        </li>
+                      <li>
+                            <img src="img/avatar.png" alt="Usuario">
+                            <div class="text">Como se ela tivesse sido a mais bela história de amor da sua vida. E que uma parte de você acredite que ela foi, de fato,</div>
+                        </li>
+                      <li>
+                            <img src="img/avatar.png" alt="Usuario">
+                            <div class="text">A esperança é a maior motivação da vida. Ela que nos joga pra frente e pra cima. Se acaba a esperança em alguém ou por alguma coisa</div>
+                        </li>
+                      <li>
+                            <img src="img/avatar.png" alt="Usuario">
+                            <div class="text"> Fusce rhoncus lectus nec nulla malesuada malesuada lectus nisl</div> 
+                      </li>
+                      <li>
+                            <img src="img/avatar.png" alt="Usuario">
+                            <div class="text">  'O que é Lorem Ipsum? Lorem Ipsum é </div>
+                      </li>
+                      <li>
+                            <img src="img/avatar.png" alt="Usuario">
+                            <div class="text">'O que é Lorem Ipsum?Lorem Ipsum é simplesmente</div>
+                     </li>
+                      <li>
+                            <img src="img/avatar.png" alt="Usuario">
+                            <div class="text">Motivação é algo que ninguém lhe dá dentro de uma caixa bonita. É algo muito pessoal para alguem ousar a lhe dar.</div>
+                     </li> 
+                   </div>
+                </div>
+            </div>
+
+            <div class="avatar">
+                <img src="img/avatar.png" alt="Usuario">
+                <div class="dropdown-menu setting">
+                    <div class="items">
+                        <span class="fa-regular fa-user"></span> Perfil
+                    </div>
+                    <div class="items">
+                        <span class="fa-solid fa-gear"></span> Configuração
+                    </div>
+                    <div class="items">
+                        <span class="fa-solid fa-right-from-bracket"></span> Sair
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+    </nav>
+    <!--Inicio conteudo-->
+    <div class="content">
+       <!--Inicio Sidebar-->   
+       <div class="sidebar">
+            <a href="index.html" class="sidebar-nav"><i class="icon fa-solid fa-gauge-high"></i><span>Dashbord</span></a>
+
+            <a href="listar.html" class="sidebar-nav active"><i class="icon fa-solid fa-users"></i><span>Listar</span></a>
+
+            <a href="login.html" class="sidebar-nav"><i class="icon fa-solid fa-right-from-bracket"></i><span>Sair</span></a>
+        
+        </div>
+        
+        <!--Conteudo do ADM-->
+        <div class="wrapper">
+            <div class="row">
+                <div class="top-list">
+                    <span class="title-content">Listar</span>
+                    <div class="top-list-right">
+                        <button type="button">Botao</button>
+                    </div>
+                </div>
+                
+            
+            
+            <table class="table-list">
+                <thead class="list-head">
+                    <tr>
+                        <th class="list-head-content">ID</th>
+                        <th class="list-head-content">Nome</th>
+                        <th class="list-head-content">E-mail</th>
+                        <th class="list-head-content">Ações</th>
+                    </tr>
+                </thead>
+                <tbody class="list-body">
+                    <tr>
+                        <td class="list-body-content">2</td>
+                        <td class="list-body-content">Marcia</td>
+                        <td class="list-body-content">marcia@gmail.com</td>
+                        <td class="list-body-content">Visualizar Editar apagar</td>
+                    </tr>
+
+                    <tr>
+                        <td class="list-body-content">1</td>
+                        <td class="list-body-content">Willian</td>
+                        <td class="list-body-content">Will@gmail.com</td>
+                        <td class="list-body-content">Visualizar Editar apagar</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="content-pagination">
+                <div class="pagination">
+                    <a href="#">&laquo</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#" class="active">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <script src="scriptADM.js"></script>
+ </body>
 </html>
