@@ -84,6 +84,7 @@ body{
     background-color: var(--main-bg-color);
     width: 280px;
     border-radius: 7px;
+    display: none;
     
     
 }
@@ -93,6 +94,7 @@ body{
 }
 .dropdown-menu.active{
     display: block;
+    
 }
 .dropdown-menu .item span{
     margin-right: 15px;
