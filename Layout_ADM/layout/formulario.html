@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style_adm.css">
     
-    <title>ADM - Celke</title>
+    <title>Formulário - Celke</title>
 </head>
 
 <body>
@@ -80,11 +80,11 @@
     <div class="content">
        <!--Inicio Sidebar-->   
        <div class="sidebar">
-            <a href="index.html" class="sidebar-nav active"><i class="icon fa-solid fa-gauge-high"></i><span>Dashbord</span></a>
+            <a href="index.html" class="sidebar-nav"><i class="icon fa-solid fa-gauge-high"></i><span>Dashbord</span></a>
 
             <a href="listar.html" class="sidebar-nav"><i class="icon fa-solid fa-users"></i><span>Listar</span></a>
-
-            <a href="formulario.html" class="sidebar-nav"><i class="icon fa-solid fa-pen-to-square"></i><span> Formulário </span></a>
+            
+            <a href="formulario.html" class="sidebar-nav active"><i class="icon fa-solid fa-pen-to-square"></i><span> Formulário </span></a>
 
             <a href="visualizar.html" class="sidebar-nav"><i class="icon fa-solid fa-eye"></i><span> Vizualizar </span></a>
 
@@ -93,35 +93,63 @@
         </div>
         
         <!--Conteudo do ADM-->
-        <div class="wrapper">
-            <div class="row">
-                <div class="box box-frirst">
-                    <span class="fa-solid fa-users"></span>
-                    <span>397</span>
-                    <span>Usuarios</span>
-                </div>
-
-                <div class="box box-second">
-                    <span class="fa-solid fa-truck-ramp-box"></span>
-                     <span>43</span>
-                    <span>Entregdas</span>
-                </div>
-                <div class="box box-third">
-                    <span class="fa-regular fa-circle-check"></span>
-                     <span>12</span>
-                    <span>Completas</span>
-                </div>
-                <div class="box box-fourth">
-                    <span class="fa-solid fa-triangle-exclamation"></i></span>
-                     <span>3</span>
-                    <span>Alertas</span>
-                </div>
-
+<div class="wrapper">
+    <div class="row">
+        <div class="top-content-adm">
+             <span class="title-content">Cadastrar</span>
+            <div class="top-content-adm-right">
+                <button type="button" class="btn-success">Listar</button>
             </div>
-            
-        </div>
-    </div>
+        
+   
 
+
+        <div class="content-adm">
+            <form class="form-adm">
+                <div class="row-input">
+                    <div class="column">
+                        <label class="title-input">Nome</label>
+                        <input type="text" id="name" name="name" class="input-adm"   placeholder="Nome Completo"/>
+                    </div>    
+
+                    <div class="column">
+                        <label class="title-input">E-mail</label>
+                        <input type="email" id="email" name="email" class="input-adm" placeholder="E-mail">
+                    </div>
+                </div>    
+                <div class="row-input">
+                    <div class="column">
+                        <label class="title-input">Campo 3</label>
+                        <input type="text" id="campo_3" name="campo_3" class="input-adm"  placeholder="Campo 3">
+                    </div>
+
+                    <div class="column">
+                        <label class="title-input">Campo 4</label>
+                        <input type="text" id="campo_4" name="campo_4" class="input-adm"  placeholder="Campo 4">
+                    </div> 
+                </div>     
+                    
+                <div class="row-input">
+                    <div class="column">
+                        <label class="title-input">Campo 5</label>
+                        <input type="text" id="campo_5" name="campo_5" class="input-adm"  placeholder="Campo 5" />
+                    </div>
+                </div>  
+
+                 <div class="row-input">
+                     <div class="column">
+                        <label class="title-input">Descrição </label>
+                            <textarea   id="descricao" rows="3" class="input-adm" placeholder=" Descrição"></textarea>  
+                     </div>
+                </div>
+         </div>    
+                            <button type="button" class="btn-success">Cadastrar</button>
+                     
+                          
+            </form>
+        </div>          
+ </div> 
+</div>
     <script src="scriptADM.js"></script>
  </body>
 </html>
