@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Validação do formulario Bootstrap</title>
+</head>
+
+<body>
+    <div class="container conteudo-pg">
+        <h2>Validando Formulário</h2>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="nome_usuarios" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome_usuarios" placeholder="Nome completo" required>
+                <div class="valid-feedback">
+                    Campo preenchido!
+                </div>
+                <div class="invalid-feedback">
+                    Erro nessecario preencher o campo nome!
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="email_usuario" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email_usuario" placeholder="Digite o seu E-mail" required>
+                <div class="valid-feedback">
+                    Campo preenchido!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="Usuario" class="form-label">Usuario</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputUsuario">@</span>
+                    <input type="text" class="form-control" id="Usuario"
+                        aria-describedby="inputUsuario"  placeholder="Digite o Usuario administrativo">
+                    <div class="valid-feedback">
+                        Campo preenchido!
+                    </div>
+                    <div class="invalid-feedback">
+                        Erro nessecario preencher o campo nome!
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-outline-success" type="submit">Cadastrar</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+        integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()</script>
+</body>
+
+</html>
