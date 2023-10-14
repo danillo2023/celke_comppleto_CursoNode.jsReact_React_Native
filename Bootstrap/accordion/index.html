@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylestyle.css">
+
+  <title>Accordion</title>
+</head>
+
+<body>
+  <div class="container conteudo-pg">
+    <h2 class="mt-4">Exemplo básico Accordion</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Accordion (acordeão) 1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Esse é o corpo do acordeão do primeiro item. Ele é exibido por padrão, até que o plug-in de colapso adicione
+            as classes apropriadas que usamos para estilizar cada elemento. Essas classes controlam a aparência geral,
+            bem como a exibição e a ocultação por meio de transições CSS. Você pode modificar tudo isso com CSS
+            personalizado ou substituindo nossas variáveis padrão. Também vale a pena observar que praticamente qualquer
+            HTML pode ser inserido no .accordion-body, embora a transição limite o excesso de fluxo.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion (acordeão) 2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Esse é o corpo do acordeão do segundo item.</strong> Ele fica oculto por padrão, até que o plug-in
+            de colapso adicione as classes apropriadas que usamos para estilizar cada elemento. Essas classes controlam
+            a aparência geral, bem como a exibição e a ocultação por meio de transições CSS. Você pode modificar tudo
+            isso com CSS personalizado ou substituindo nossas variáveis padrão. Também vale a pena observar que
+            praticamente qualquer HTML pode ser inserido no .accordion-body, embora a transição limite o excesso de
+            fluxo.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion (acordeão) 3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Esse é o corpo do acordeão do terceiro item.</strong> Ele fica oculto por padrão, até que o plug-in
+            de colapso adicione as classes apropriadas que usamos para estilizar cada elemento. Essas classes controlam
+            a aparência geral, bem como a exibição e a ocultação por meio de transições CSS. Você pode modificar tudo
+            isso com CSS personalizado ou substituindo nossas variáveis padrão. Também vale a pena observar que
+            praticamente qualquer HTML pode ser inserido no .accordion-body, embora a transição limite o excesso de
+            fluxo.
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <hr class="mt-5">
+    <h2>Exemplo Accordion todos os itens podem ser abertos</h2>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+            aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Accordion (acordeão) 1
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="accordionPanelsStayOpenExample">
+          <div class="accordion-body">
+            Esse é o corpo do acordeão do primeiro item. Ele é exibido por padrão, até que o plug-in de colapso adicione
+            as classes apropriadas que usamos para estilizar cada elemento. Essas classes controlam a aparência geral,
+            bem como a exibição e a ocultação por meio de transições CSS. Você pode modificar tudo isso com CSS
+            personalizado ou substituindo nossas variáveis padrão. Também vale a pena observar que praticamente qualquer
+            HTML pode ser inserido no .accordion-body, embora a transição limite o excesso de fluxo.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwoAb" aria-expanded="false" aria-controls="collapseTwoAb">
+            Accordion (acordeão) 2
+          </button>
+        </h2>
+        <div id="collapseTwoAb" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <strong>Esse é o corpo do acordeão do segundo item.</strong> Ele fica oculto por padrão, até que o plug-in
+            de colapso adicione as classes apropriadas que usamos para estilizar cada elemento. Essas classes controlam
+            a aparência geral, bem como a exibição e a ocultação por meio de transições CSS. Você pode modificar tudo
+            isso com CSS personalizado ou substituindo nossas variáveis padrão. Também vale a pena observar que
+            praticamente qualquer HTML pode ser inserido no .accordion-body, embora a transição limite o excesso de
+            fluxo.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThreeAb" aria-expanded="false" aria-controls="collapseThreeAb">
+            Accordion (acordeão) 3
+          </button>
+        </h2>
+        <div id="collapseThreeAb" class="accordion-collapse collapse" aria-labelledby="accordionPanelsStayOpenExample">
+          <div class="accordion-body">
+            <strong>Esse é o corpo do acordeão do terceiro item.</strong> Ele fica oculto por padrão, até que o plug-in
+            de colapso adicione as classes apropriadas que usamos para estilizar cada elemento. Essas classes controlam
+            a aparência geral, bem como a exibição e a ocultação por meio de transições CSS. Você pode modificar tudo
+            isso com CSS personalizado ou substituindo nossas variáveis padrão. Também vale a pena observar que
+            praticamente qualquer HTML pode ser inserido no .accordion-body, embora a transição limite o excesso de
+            fluxo.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+    integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</body>
+
+</html>
