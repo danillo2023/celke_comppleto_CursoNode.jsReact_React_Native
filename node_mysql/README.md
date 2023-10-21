@@ -66,3 +66,9 @@ Editar registro no banco de dados
 
 Apagar registro no banco de dados
 ### DELETE FROM users WHERE id=7;
+
+Sequeliza é uma biblioteca Javascript que facilita o gerenciamento de um banco de dados SQL
+### npm install --save sequelize
+
+Instalar o drive do banco de dados 
+### npm install --save mysql2
