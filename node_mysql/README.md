@@ -72,3 +72,9 @@ Sequeliza é uma biblioteca Javascript que facilita o gerenciamento de um banco 
 
 Instalar o drive do banco de dados 
 ### npm install --save mysql2
+
+Intalar o módulo para criptografar a senha
+### npm install --save bcryptjs
+
+Intalar a dependecia para JWT
+### npm install --save jsonwebtoken

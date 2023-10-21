@@ -9,3 +9,6 @@ www.localhost:8081/usuarios
 www.localhost:8081/usuarios/:id
 
 ```
+
+Intalar o módulo para criptografar a senha
+### npm install --save bcryptjs
